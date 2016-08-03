@@ -3,8 +3,6 @@ package edu.desu.dsuappacademy.tbc;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -24,6 +22,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity
 
     public void browser1(View view){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("http://livestream.com/accounts/5077358"));
+                Uri.parse("https://livestream.com/accounts/5077358"));
         startActivity(browserIntent);
     }
 
@@ -69,14 +68,6 @@ public class MainActivity extends AppCompatActivity
         chooser = Intent.createChooser(eIntent, "Send Email");
         startActivity(chooser);
     }
-
-
-
-
-
-
-
-
 
     @Override
     public void onBackPressed() {
@@ -127,10 +118,10 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_third_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,
-                    new StreamLiveFragment()).commit();
+                    new EmailFragment()).commit();
 
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_map) {
 
         } else if (id == R.id.nav_send) {
 

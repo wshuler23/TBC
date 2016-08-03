@@ -4,23 +4,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#000000"
-    tools:context="edu.desu.dsuappacademy.tbc.StreamLiveFragment">
+    tools:context=".EmailFragment">
 
     <!-- TODO: Update blank fragment layout -->
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/livestream"/>
+<!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/livestream"/>-->
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter"
-        android:id="@+id/button"
-        android:layout_marginBottom="80dp"
-        android:onClick="browser1"
-        android:layout_gravity="center_horizontal|bottom" />
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Enter"-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_marginBottom="80dp"-->
+        <!--android:onClick="browser1"-->
+        <!--android:layout_gravity="center_horizontal|bottom" />-->
 
 
 </FrameLayout>
