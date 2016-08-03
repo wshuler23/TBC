@@ -45,24 +45,24 @@ public class MainActivity extends AppCompatActivity
         startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phoneNumber, null)));
     }
 
-    public void browser1(View view){
+    public void browser1(View view) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://livestream.com/accounts/5077358"));
         startActivity(browserIntent);
     }
 
-    public void browser2(View view){
+    public void browser2(View view) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                 Uri.parse("http://www.tabernacle-burlington.org/calendar/"));
         startActivity(browserIntent);
     }
 
-    public void email(View view){
+    public void email(View view) {
         Intent intent = null, chooser = null;
 
         Intent eIntent = new Intent(Intent.ACTION_SEND);
         eIntent.setData(Uri.parse("mailto:"));
-        String[] to={"secretary@tabernacle-burlington.org"};
+        String[] to = {"secretary@tabernacle-burlington.org"};
         eIntent.putExtra(Intent.EXTRA_EMAIL, to);
         eIntent.setType("message/rfc822");
         chooser = Intent.createChooser(eIntent, "Send Email");
@@ -121,15 +121,14 @@ public class MainActivity extends AppCompatActivity
                     new EmailFragment()).commit();
 
 
-        } else if (id == R.id.nav_map) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+//        } else if (id == R.id.nav_map) {
+//
+//        } else if (id == R.id.nav_send) {
+//
     }
-}
 
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
+        }
+    }

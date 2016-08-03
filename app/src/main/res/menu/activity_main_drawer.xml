@@ -29,16 +29,16 @@
                 android:icon="@mipmap/ic_phone_bluetooth_speaker_black_24dp"
                 android:title="(609)538-2350"
                 android:onClick="fax"/>
-            <item
-                android:id="@+id/nav_map"
-                android:icon="@mipmap/ic_add_location_black_24dp"
-                android:title="150 Second Street/Rev. Dr. Richard W. Jones, Burlington, New Jersey 08016"
-                android:onClick="map"/>
+            <!--<item-->
+                <!--android:id="@+id/nav_map"-->
+                <!--android:icon="@mipmap/ic_add_location_black_24dp"-->
+                <!--android:title="150 Second Street/Rev. Dr. Richard W. Jones, Burlington, New Jersey 08016"-->
+                <!--android:onClick="map"/>-->
 
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
 
         </menu>
     </item>
